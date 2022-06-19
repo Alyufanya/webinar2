@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// ---Task 13
+Console.WriteLine("Введите число ");
+int number = Convert.ToInt32(Console.ReadLine());
+number = Math.Abs(number);
+if(number<100)
+{
+Console.WriteLine("Третьей цифры нет");
+}
+else{
+    while(number>999)
+    {
+        number = number/10;
+    }
+Console.WriteLine(number%10);
+}
